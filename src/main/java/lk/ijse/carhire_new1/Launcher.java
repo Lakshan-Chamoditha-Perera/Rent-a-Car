@@ -13,7 +13,7 @@ public class Launcher extends Application {
     }
 
     public void start(Stage stage) throws Exception {
-        Parent rootNode = FXMLLoader.load(this.getClass().getResource("/view/main_form.fxml"));
+        Parent rootNode = FXMLLoader.load(this.getClass().getResource("/view/login_form.fxml"));
 
         Scene scene = new Scene(rootNode);
 
