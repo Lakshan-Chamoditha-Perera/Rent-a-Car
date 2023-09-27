@@ -5,6 +5,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.carhire_new1.db.FactoryConfiguration;
+import org.hibernate.Session;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,6 +26,6 @@ public class CustomerFormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        Session session = FactoryConfiguration.getFactoryConfiguration().getSession();// for testing purpose
     }
 }
