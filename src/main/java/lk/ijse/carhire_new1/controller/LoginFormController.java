@@ -19,14 +19,15 @@ public class LoginFormController {
     public AnchorPane root;
 
     public void LoginAction(ActionEvent actionEvent) throws IOException {
-        String user = textUser.getText();
+      /*  String user = textUser.getText();
         String pw = textPw.getText();
 
         if (user.equals("User") && pw.equals("Password")) {
             navigate();
         } else {
             new Alert(Alert.AlertType.ERROR, "Credential Invalid").show();
-        }
+        }*/
+        navigate();
     }
 
     private void navigate() throws IOException {
