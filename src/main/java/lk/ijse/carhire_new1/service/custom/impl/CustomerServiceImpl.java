@@ -1,6 +1,8 @@
 package lk.ijse.carhire_new1.service.custom.impl;
 
+import lk.ijse.carhire_new1.dao.DaoFactory;
 import lk.ijse.carhire_new1.dao.custom.CustomerDao;
+import lk.ijse.carhire_new1.dao.util.DaoType;
 import lk.ijse.carhire_new1.dto.CustomerDto;
 import lk.ijse.carhire_new1.entity.CustomerEntity;
 import lk.ijse.carhire_new1.service.ServiceFactory;
@@ -11,7 +13,7 @@ public class CustomerServiceImpl implements CustomerService {
     private final CustomerDao customerDao;
 
     public CustomerServiceImpl() {
-        customerDao = ServiceFactory.getInstance().getService(ServiceType.Customer_Service);
+        customerDao = DaoFactory.getInstance().getDao(DaoType.Customer_Dao);
     }
 
     @Override
