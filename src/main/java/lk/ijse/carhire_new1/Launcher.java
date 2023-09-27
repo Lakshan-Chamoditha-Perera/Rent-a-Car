@@ -1,14 +1,19 @@
 package lk.ijse.carhire_new1;
 
+import com.mysql.cj.Session;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import lk.ijse.carhire_new1.db.FactoryConfiguration;
+
+
 
 
 public class Launcher extends Application {
     public static void main(String[] args) {
+
         launch(args);
     }
 

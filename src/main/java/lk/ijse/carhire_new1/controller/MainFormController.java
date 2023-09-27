@@ -43,7 +43,11 @@ public class MainFormController {
         this.node.getChildren().add(root);
     }
 
-    public void rentAction(ActionEvent actionEvent) {
+    public void rentAction(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(this.getClass().getResource("/view/rent_form.fxml"));
+
+        this.node.getChildren().clear();
+        this.node.getChildren().add(root);
     }
 
     public void logoutAction(ActionEvent actionEvent) throws IOException {
