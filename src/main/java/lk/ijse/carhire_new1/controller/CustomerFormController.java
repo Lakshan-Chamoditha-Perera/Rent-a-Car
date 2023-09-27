@@ -24,6 +24,7 @@ public class CustomerFormController implements Initializable {
     public TextField addressText;
     public AnchorPane root;
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Session session = FactoryConfiguration.getFactoryConfiguration().getSession();// for testing purpose
