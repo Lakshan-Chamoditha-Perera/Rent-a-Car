@@ -1,11 +1,8 @@
 package lk.ijse.carhire_new1.service;
 
-import lk.ijse.carhire_new1.dao.SuperDao;
-import lk.ijse.carhire_new1.dao.custom.impl.*;
-import lk.ijse.carhire_new1.dao.util.DaoType;
-import lk.ijse.carhire_new1.dao.util.exception.DaoNotImplemented;
 import lk.ijse.carhire_new1.service.custom.impl.CustomerServiceImpl;
 import lk.ijse.carhire_new1.service.util.ServiceType;
+import lk.ijse.carhire_new1.service.util.exception.ServiceNotImplemented;
 
 public class ServiceFactory {
     private static ServiceFactory instance;
@@ -22,7 +19,7 @@ public class ServiceFactory {
             case Customer_Service:
                 return (T) new CustomerServiceImpl();
             default:
-                throw new RuntimeException();
+                throw new ServiceNotImplemented();
         }
     }
 }
